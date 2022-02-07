@@ -6,9 +6,9 @@
 
 int main(int argc, char *argv[]){
 
-  if (argc < 3){                            // User must input atleast 2 arguments, I used a "3" because it counts the space after ./llist
-    printf("ERROR: Need More Arguments\n"); // Error message
-  }
+   if (argc < 2){                           // User must input atleast 2 arguments that way the user can still print an empty list. 
+    printf("ERROR: Need More Arguments\n"); // Error message when no additional arguments are added after ./llist (./llist counts as an argument)
+  }                                         // My initial implemenation had 3 arguments because I figured the user would start by inputting "ih" or "it" followed by its value for a total of 3 arguments
     
   else {                                    // If more than 2 arguments are inputted
     struct node *head = NULL;               // Init the head node to NULL
